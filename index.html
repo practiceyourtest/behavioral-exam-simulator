@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Behavioral Exam Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="view active">
+            <h1>Advanced Behavioral Exam Simulator</h1>
+            <h2>Your Ultimate Resource for Mastering ABA and Autism Concepts</h2>
+            <p>Prepare with confidence for your certification exams or deepen your professional knowledge with our meticulously crafted simulator. This tool is designed for students, professionals, and anyone passionate about the principles of Applied Behavior Analysis (ABA) and understanding Autism Spectrum Disorder (ASD).</p>
+            
+            <h3>Why Use This Simulator?</h3>
+            <ul>
+                <li><strong>Comprehensive Question Bank:</strong> Tackle a wide range of questions covering core ABA principles, ethical considerations, behavioral measurement, and ASD characteristics.</li>
+                <li><strong>Detailed Explanations:</strong> Don't just learn the 'what,' understand the 'why.' Every question includes a detailed rationale based on established best practices and literature.</li>
+                <li><strong>Realistic Exam Experience:</strong> Simulate the pressure of a real exam with a timed environment and a clean, intuitive interface.</li>
+                <li><strong>Track Your Progress:</strong> Instantly see your score, review your answers, and track your high scores for each category to identify areas for improvement.</li>
+            </ul>
+
+            <h3>Official Resources & Further Reading</h3>
+            <p>We believe in learning from the source. For the most accurate and official information, we highly recommend consulting these authorities:</p>
+            <ul>
+                <li><a href="https://www.bacb.com/" target="_blank" rel="noopener noreferrer">Behavior Analyst Certification Board (BACB)</a></li>
+                <li><a href="https://www.autismspeaks.org/" target="_blank" rel="noopener noreferrer">Autism Speaks</a></li>
+                <li><a href="https://www.cdc.gov/ncbddd/autism/hcp-dsm.html" target="_blank" rel="noopener noreferrer">CDC Page on DSM-5 Criteria for ASD</a></li>
+                <li><a href="https://www.apbahome.net/" target="_blank" rel="noopener noreferrer">Association of Professional Behavior Analysts (APBA)</a></li>
+            </ul>
+            <p>For more practice exams and a comprehensive suite of study tools across various certifications, an excellent resource is <a href="https://practiceyourtest.com/" target="_blank">practiceyourtest.com</a>.</p>
+
+            <h2>Choose Your Category Below to Begin</h2>
+            <div id="category-selection" class="category-grid">
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="view">
+            <header class="quiz-header">
+                <h2 id="quiz-category-title">Category</h2>
+                <div class="quiz-info">
+                    <span id="question-counter"></span>
+                    <div id="timer">--:--</div>
+                </div>
+            </header>
+            <div class="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <main id="question-container">
+                <p id="question-text">This is the question text?</p>
+                <div id="answer-options" class="answer-grid">
+                </div>
+            </main>
+            <footer class="quiz-footer">
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+                <button id="finish-btn" class="nav-btn hide">Finish Exam</button>
+            </footer>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="view">
+            <h1 class="title">Exam Results</h1>
+            <div class="results-summary">
+                <div class="result-box">
+                    <p>Score</p>
+                    <h2 id="final-score">0%</h2>
+                </div>
+                <div class="result-box">
+                    <p>High Score</p>
+                    <h2 id="high-score">0%</h2>
+                </div>
+                <div class="result-box">
+                    <p>Status</p>
+                    <h2 id="result-status">Fail</h2>
+                </div>
+            </div>
+            <div id="detailed-review">
+                <h3>Detailed Review</h3>
+                <div id="review-container">
+                </div>
+            </div>
+            <div class="results-controls">
+                <button id="restart-btn">Try This Category Again</button>
+                <button id="home-btn">Choose Another Category</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
